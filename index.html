@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.5.3/handlebars.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Component</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="addMenu">
+            <h1>Add notification</h1>
+            <label for="Title">Title</label>
+            <input type="text" id="title">
+            <label for="text">Text</label>
+            <input type="text" id="text">
+            <label for="type">Type of notification</label>
+            <select name="type" id="type">
+                <option value="text">text</option>
+                <option value="promotion">promotion</option>
+                <option value="bonus">bonus</option>
+            </select>
+            <button id="submit">Send</button>
+        </div>
+        <div class="component" id="root">
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

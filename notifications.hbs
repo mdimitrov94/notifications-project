@@ -1,0 +1,20 @@
+<div class="notification">
+    <button id="addBtn" class="addBtn">Add</button>
+    <button id="btn"><i class="fas fa-bell"></i>
+    <div class="count">{{notifications.length}}</div></button>
+    
+</div>
+<div class="notification2">
+    <div class="box"></div>
+    <h1>NOTIFICATIONS</h1>
+    {{#each data}}
+    <div class="messages">
+
+        <div class="photo"><img src="{{image}}" alt=""></div>
+
+        <div class="message">
+            <span><strong>{{title}}</strong> {{text}}</span>
+        </div>
+    </div>
+    {{/each}}
+</div>

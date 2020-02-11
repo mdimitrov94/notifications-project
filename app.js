@@ -10,7 +10,7 @@ async function loadData() {
 
     let notifications = data.filter(e => e.type !== 'bonus')
 
-    let src = await fetch('http://127.0.0.1:5500/notifications.hbs')
+    let src = await fetch('https://raw.githubusercontent.com/mdimitrov94/notifications-project/master/notifications.hbs')
         .then(res => res.text())
     const compile = Handlebars.compile(src);
     document.getElementById('root').innerHTML = compile({ data, notifications })
